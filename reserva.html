@@ -9,6 +9,15 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+     
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="css/owl.theme.css">
+
+    <!-- Estilos -->
+    <link href="css/styles.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -23,14 +32,14 @@
       </div>
     </header><!-- /header -->
     <div class="promocion">
-      <h1>Haz tu reserva en línes y obten un <span class="descuento">10%</span> de descuento</h1>
-    </div>
+      <h1>Haz tu reserva en línes y obten <span class="descuento">10%</span> de descuento</h1>
+    </div><!-- fin de promocion -->
     <div class="contenido">
       <h2>Te ofrecemos</h2>
       <div class="content-entradas">
         <h3>Entradas</h3>
         <span class="ayuda">Desliza tu dedo hacia los lados para conocer las diferentes opciones</span>
-        <div class="owl-carousel entradas">
+        <div id="carousel-platos" class="owl-carousel entradas">
           <div>
             <img src="" alt="">
             <h4>Ceviche</h4>
@@ -39,25 +48,25 @@
           </div>
           <div>
             <img src="" alt="">
-            <h4>Ceviche</h4>
+            <h4>Tian de cangrejo</h4>
             <p>Ingredientes</p>
             <p class="precio">$5.000</p>
           </div>
           <div>
             <img src="" alt="">
-            <h4>Ceviche</h4>
+            <h4>Mejillones gratinados</h4>
             <p>Ingredientes</p>
             <p class="precio">$5.000</p>
           </div>
           <div>
             <img src="" alt="">
-            <h4>Ceviche</h4>
+            <h4>Sopa de cebolla</h4>
             <p>Ingredientes</p>
             <p class="precio">$5.000</p>
           </div>
           <div>
             <img src="" alt="">
-            <h4>Ceviche</h4>
+            <h4>Bouillabaise</h4>
             <p>Ingredientes</p>
             <p class="precio">$5.000</p>
           </div>
@@ -67,7 +76,7 @@
       <div class="content-fuertes">
         <h3>Platos fuertes</h3>
         <span class="ayuda">Desliza tu dedo hacia los lados para conocer las diferentes opciones</span>
-        <div class="owl-carousel fuertes">
+        <div id="carousel-platos2" class="owl-carousel fuertes">
           <div>
             <img src="" alt="">
             <h4>Ceviche</h4>
@@ -116,7 +125,7 @@
        <div class="content-entradas">
         <h3>Entradas</h3>
         <span class="ayuda">Desliza tu dedo hacia los lados para conocer las diferentes opciones</span>
-        <div class="owl-carousel entradas">
+        <div id="carousel-platos3" class="owl-carousel entradas">
           <div>
             <img src="" alt="">
             <h4>Ceviche</h4>
@@ -140,12 +149,59 @@
       <div class="reserva">
         <h2>¡Reserva y disfruta tu beneficio!</h2>
         <p class="obligatorio">*Campos obligatorios para realizar correctamente tu reserva</p>
-      </div>
-    </div>
+        <form role="form" action="reserva_submit" method="get" accept-charset="utf-8">
+          <div class="general">
+            <div class="form-group">
+              <label for="personas">¿Para cuántas personas quieres tu mesa?</label>
+              <select  id="personas" class="form-control">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fecha">¿Para qué día quieres tu reserva?</label>
+              <input type="date" id="fecha" placeholder="Selecciona la fecha">
+            </div>
+          </div> <!-- fin general -->
+          <div class="info-personal">
+            <p>¿A nombre de qúién?</p>
+            <div class="form-group nombre">
+              <label for="nombre">Nombre</label>
+              <input type="text" class="" id="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="form-group correo">
+              <label for="correo">Correo electrpónico</label>
+              <input type="text" class="" id="correo" placeholder="Ingresa tu correo">
+            </div>
+            <div class="form-group tel-fijo">
+              <label for="tel-fijo">Teléfono</label>
+              <input type="text" class="" id="tel-fijo" placeholder="Ingresa tu teléfono fijo">
+            </div>
+            <div class="form-group celular">
+              <label for="celular">Celular</label>
+              <input type="text" class="" id="celular" placeholder="Ingresa tu teléfono celular">
+            </div>
+          </div> <!-- fin info-personal -->
+          <div class="observaciones">
+            <p>¿Alguna observación?</p>
+            <textarea placeholder="Cuéntanos tus caprichos, déjanos atenderte"></textarea>
+          </div>
+          <button type="submit" class="">¡Reservar y obtener mi descuento!</button>
+        </form>
+      </div><!-- fin de reserva -->
+      <div class="ubicacion">
+        <h2>Nuestra ubicación</h2>
+      </div><!-- fin de ubicacion -->
+    </div><!-- fin de contenido -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- Include js plugin -->
+    <script src="js/owl.carousel.js"></script>
   </body>
 </html>

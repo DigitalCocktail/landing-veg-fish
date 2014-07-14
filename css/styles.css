@@ -1,0 +1,25 @@
+h1, h2, h3, h4, p{
+	margin: 0;
+}
+header{
+	border-top: solid 15px #A0C13F;
+}
+.logo{
+	width: 70%;
+	height: 100px;
+	background: #184C2A;
+	margin: 15px auto;
+}
+.promocion{
+	padding: 15px;
+	border-top: solid 5px #842F0C;
+	border-bottom: solid 5px #842F0C;
+	background: #CB6534;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 60px;
+}
+.promocion span{
+	display: block;
+	font-size: 2em;
+}
