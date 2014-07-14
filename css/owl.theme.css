@@ -42,15 +42,15 @@
 }
 .owl-theme .owl-controls .owl-page span{
 	display: block;
-	width: 12px;
-	height: 12px;
+	width: 25px;
+	height: 25px;
 	margin: 5px 7px;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
 	opacity: 0.5;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-	background: #869791;
+	background: #a0c140;
 }
 
 .owl-theme .owl-controls .owl-page.active span,
