@@ -29,7 +29,6 @@ input, textarea{
 .logo{
 	width: 70%;
 	height: auto;
-	background: #184C2A;
 	margin: 15px auto;
 }
 .logo img{
@@ -50,6 +49,9 @@ input, textarea{
 }
 .contenido{
 	padding: 0 15px;
+}
+.owl-wrapper-outer {
+	background: #a0c140;
 }
 .content-entradas, .content-fuertes, .content-postres{
 	margin-bottom: 60px;
