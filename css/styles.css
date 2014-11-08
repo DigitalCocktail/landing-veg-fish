@@ -167,6 +167,9 @@ input, textarea{
 	text-decoration: none;
 }
 @media only screen and (min-width: 769px) {
+	.ayuda{
+		display: none;
+	}
 	.ubicacion{
 		clear: both;
 	}
