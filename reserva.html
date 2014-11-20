@@ -20,7 +20,9 @@
 
     <!-- Fuente -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="js/gmaps.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -199,8 +201,9 @@
       </div><!-- fin de reserva -->
       <div class="ubicacion">
         <h2>Nuestra ubicación</h2>
+        <div id="mapa" style="width: 100%; height: 200px"></div>
         <p>Veg and Fish Qsine, Carrera 35a 46 - 51</p>
-        <p>Ciudad, Colombia</p>
+        <p>Bucaramanga, Colombia</p>
       </div><!-- fin de ubicacion -->
     </div><!-- fin de contenido -->
 
@@ -208,5 +211,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include js plugin -->
     <script src="js/owl.carousel.js"></script>
+    <script type="text/javascript">
+      var map;
+      $(document).ready(function(){
+        map = new GMaps({
+          el: '#mapa',
+          lat: 7.117573,
+          lng: -73.109364,
+          zoom: 16
+        });
+        map.addMarker({
+          lat: 7.117573,
+          lng: -73.109364,
+          title: 'Veg & Fish Qsine'
+        });
+      });
+    </script>    
   </body>
 </html>
