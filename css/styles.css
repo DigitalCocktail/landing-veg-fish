@@ -18,6 +18,9 @@ h4{
 	font-weight: 700;
 	margin: 10px 0;
 }
+p{
+	font-size: 1.2em;
+}
 header{
 	border-top: solid 15px #A0C13F;
 }
